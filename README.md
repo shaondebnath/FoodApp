@@ -6,7 +6,7 @@ This app contains feature:
 
 - Stack Navigator
 
-- Restaurent list and filter by Categories
+- Restaurant list and filter by Categories
 
 - Search Restaurants
 
