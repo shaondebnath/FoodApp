@@ -33,6 +33,6 @@ This app contains feature:
 
 
 
-I developed this app inspired by the tutorial project of "byProgrammer". Image and demo data is taken from there. But this project is structured in different way and also many other features such as google signin, search, Add to Favorite etc. have been added.
+I developed this app inspired by the tutorial project of "byProgrammer". Image and demo data is taken from there. But this project is structured in different way and also many other features such as google signin, search, Add to Favorite, Drawer navigator etc. have been added.
 
 
