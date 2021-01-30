@@ -15,7 +15,8 @@ import Svg, { Path } from "react-native-svg"
 import { isIphoneX } from "react-native-iphone-x-helper"
 
 
-const Tab = createBottomTabNavigator();
+
+////****** Cutomize design of bottom Tab bar ******************************************************************/
 
 const TabBarCustomButton = ({ accessibilityState, children, onPress }) => {
 
@@ -102,10 +103,20 @@ const CustomTabBar = (props) => {
 
 }
 
-const Tabs = () => {
+
+////****** Special design of bottom Tab bar END */
+
+
+//*****Tab Navigator ****************************************************************************/
+
+const BottomTab = createBottomTabNavigator();
+
+
+
+const TabNavigator = () => {
     
     return(
-        <Tab.Navigator            
+        <BottomTab.Navigator            
             tabBarOptions={{
                 showLabel: false,
                 style:{backgroundColor:"transparent", borderTopWidth:0, elevation:0}
@@ -115,7 +126,7 @@ const Tabs = () => {
             )}
         
         >
-            <Tab.Screen
+            <BottomTab.Screen
                 name="Home"
                 component={Home}
                 options={{
@@ -135,7 +146,7 @@ const Tabs = () => {
                 }}
             />
 
-            <Tab.Screen
+            <BottomTab.Screen
                 name="Search"
                 component={Search}
                 options={{
@@ -154,7 +165,7 @@ const Tabs = () => {
                 }}
             />
 
-            <Tab.Screen
+            <BottomTab.Screen
                 name="Like"
                 component={Like}
                 options={{
@@ -173,7 +184,7 @@ const Tabs = () => {
                 }}
             />
 
-            <Tab.Screen
+            <BottomTab.Screen
                 name="User"
                 component={User}
                 options={{
@@ -191,11 +202,11 @@ const Tabs = () => {
                     )
                 }}
             />
-        </Tab.Navigator>
+        </BottomTab.Navigator>
     )
     
 }
 
 
 
-export default Tabs;
+export default TabNavigator;

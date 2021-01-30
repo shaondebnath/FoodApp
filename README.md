@@ -6,7 +6,11 @@ This app contains feature:
 
 - Stack Navigator
 
-- Restaurant list and filter by Categories
+- Drawer Navigator
+
+- Tab Navigator
+
+- Restaurent list and filter by Categories
 
 - Search Restaurants
 

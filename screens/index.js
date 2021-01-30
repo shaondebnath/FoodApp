@@ -4,6 +4,8 @@ import OrderDelivery from './OrderDelivery'
 import User from './User'
 import Search from './Search'
 import Like from './Like'
+import TermsAndConditions from './TermsAndConditions'
+import ContactUs from './ContactUs'
 
 
 
@@ -13,5 +15,7 @@ export {
     OrderDelivery,
     User,
     Search,
-    Like    
+    Like,
+    TermsAndConditions,
+    ContactUs
 }

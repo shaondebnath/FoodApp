@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { MainStackNavigator} from "./navigation/StackNavigator";
 import { GoogleSignin, statusCodes } from '@react-native-community/google-signin';
 import AsyncStorage from '@react-native-community/async-storage';
 import DBUsers from './database/DBUsers';
+import AppNavigatorContainer from "./navigation/AppNavigatorContainer";
+
 
 
 let userInfo = DBUsers.uerDetails
@@ -75,11 +75,7 @@ const App = () => {
 
 
     return (
-        /// for stack navigator
-        <NavigationContainer>            
-            <MainStackNavigator />
-        </NavigationContainer>
-     
+            <AppNavigatorContainer />
     )
 }
 

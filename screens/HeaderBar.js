@@ -43,7 +43,7 @@ export default class HeaderBar extends Component {
                     justifyContent: 'center'
                 }}
                 onPress={() => {
-                    //this.props.navigation.openDrawer()
+                    this.props.navigation.toggleDrawer() // openDrawer()
                 }}
             >
                 <Image
@@ -73,7 +73,7 @@ export default class HeaderBar extends Component {
                     </View>
                 </View>
 
-                {/* {this.renderMenuButton()} */}
+                {this.renderMenuButton()}
             </View>
         );
 
